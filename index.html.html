@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+	 <title>ASSIGNMENT</title>
+	 <script>
+	 function Func()
+	 {
+	 window.open();
+	 window.close();
+	 }
+	 function Func1()
+	 {
+	 window.print();
+	 }
+	 </script>
+	 <h1>Happy Eid!</h1>
+	 <style type="text/css">
+	 body
+	 {
+	 color:blue;
+	 text-align:center;
+	 font-style:italic;
+	 font-size:26px;
+	 font-family:"Helvetica";
+	 text-shadow:3px 2px 6px lime;
+	 line-height:1.5;
+	 letter-spacing:1.5;
+	 word-spacing:5px;
+	 }
+	 #love
+	 {
+	 font-size:50px;
+	 text-shadow:none;
+	 font-weight:bold;
+	 color:black;
+	 font-style:italic;
+	 }
+	
+	 #div1
+	 {
+	 color:cyan;
+	 font-weight:bold;
+	 text-align:left;
+	 }
+	 #loveU
+	 {
+	 font-size:50px;
+	 font-weight:bold;
+	 color:cyan;
+	 }
+	 #div3
+	 {
+	 color:green;
+	 }
+	 #para7
+	 {
+	 color:pink;
+	 font-weight:bold;
+	 font-size:40px;
+	 }
+	 #div6
+	 {
+	 color:red;
+	 font-weight:bold;
+	 }
+	 #div7
+	 {
+	 font-weight:bold;
+	 font-size:40px;
+	 color:magenta;
+	 font-family:"Corben";
+	 text-align:left;
+	 }
+	 #div5
+	 {
+	 color:sky;
+	 }
+	 #para
+	 {
+	 color:pink;
+	 background-color:olive;
+	 border:8px solid black;
+	 font-weight:bold;
+	 border-radius:15px;
+	 font-size:40px;
+	 }
+	 #para2,#para3
+	 {
+	 text-family:"Roboto";
+	 text-shadow:3px 3px 6px voilet;
+	 color:punch;
+	 font-weight:bold;
+	 border-radius:15px;
+	 font-size:80px;
+	 }
+	 iframe
+	 {
+	 border:10px black solid;
+	 border-radius:13px;
+	 }
+	 iframe1
+	 {
+	 border-radius:15px;
+	 border:10px magenta double;
+	 }
+	
+	 a:link
+	 {
+	 color:black;
+	 }
+	 a:visited
+	 {
+	 color:green;
+	 }
+	 a:active
+	 {
+	 color:cherry;
+	 }
+	 </style>
+ </head>
+	 <body bgcolor="Watermelon" background-image:"">
+	 <p id="para7"><b><u>Project starting in:	</u></b> </p><p id="love"></p>
+	<button style="font-size:40px;color:black;font-weight:bold;"onclick="welcome()">welcome,click me!</button>
+	 <p id="loveU"></p>
+	 <script>
+	 x=prompt("PLEASE ENTER YOUR NAME","Visitor");
+	 if(x!=null)
+	 {
+	 document.write("Dear "+"<strong>"+x+"</strong>");
+	 }
+	 </script>
+	 <script>
+	 var CountDown=new Date("15 Dec,2020 16:00:00").getTime();
+	 var x=setInterval(function (){
+	 var now =new Date().getTime();
+	 var difference=CountDown-now;
+	 var days=Math.floor(difference/(1000*24*60*60));
+	 var hours=Math.floor(difference%(1000*24*60*60)/(1000*60*60));
+	 var minutes=Math.floor(difference%(1000*60*60)/(1000*60));
+	 var seconds=Math.floor(difference%(1000*60)/1000);
+	 document.getElementById("love").innerHTML=days+" d"+" "+hours+" h" +" "+minutes+" m"+" "+ seconds+" s";
+	 if(days<0)
+	 {
+	 clearInterval(x); document.getElementById("love").innerHTML="Sorry! project date is over; You can participate in another project:)";
+	 }
+	 },1000);
+	 </script>
+	 <script>
+	 var lim=0;
+	 var message='Dear user, sadam welcomes you to his first page & encourages you to go through such pages! project staring within the displayed time! Hurry up! & be ready!!';
+	 var speed=100;
+	 function welcome(){
+	 if(lim<message.length){ document.getElementById("loveU").innerHTML+=message.charAt(lim);
+	 lim++;
+	 setTimeout(welcome,speed);
+	 }
+	 }
+	 </script>
+	 <p id="para">May the Almighty Allah open the doors of happiness & success for you and fulfil all your dreams. wishing you and your family a<br><b> <mark>HAPPY TIME!</mark></b><br>On this auspicious occasion of Eid, let's thank our Almighty Allah for the wonderful & divine things in our life. Eid Mubarak! No matter where you will be,but May Allah fulfill your life with unlimited happiness and love of your loved ones.May this Eid fill your life with the brightest of colours,kindness,& patience. May you have a wonderful Eid this year & have great time ahead!<br></p>
+	 <img border="5px" width="950px" height="800px" align="left" src="https://images.pexels.com/photos/2067398/pexels-photo-2067398.jpeg?cs=srgb&dl=chocolate-munchies-on-ceramic-plate-2067398.jpg&fm=jpg">
+	 <br>
+	<p id="para3"> EID MUBARAK!</P>
+	 <p id="para2"><bdo dir="rtl"><strike>EID MUBARAK!</strike></bdo></p>
+	 <br>
+<a href="mailto: Hu55ainSadammmm@gmail.com">WISH ME HERE!</a>
+	 <script>
+	alert("This page has been designed by Sadam Hussain, Eid Mubarak from Sadam Hussain ,Stay blessed!");
+	 </script> 
+	 <h2>Have U forgot today's date & time, don't worry😁... click this button 👇</h2>
+	<button type="button"
+onclick="document.getElementById('sadam').innerHTML = Date();">
+Click here to display Date and Time.</button>
+<p id="sadam"></p>
+<p><b>Do u want to print this page , click the below button</b></p>
+<button type="button" onclick="Func1();">Print page</button>
+<hr><hr>
+<h3><mark>On this grand occasion, do you want to play a simple game to make your day!</mark></h3>
+<div id="div1">
+<p><b><u>     Here are the golden rules of the game;</u></b></p>
+<ul>
+<li>you have to click only once on the button "Generate Number".</li>
+<li>Random number will be generated for you </li>
+<li> Then check the generated number in the following list</li>
+<li>Take its screenshot and keep it as your status(or you can only send it to me).</li>
+<li>If you don't want to play this game, please exit the page</li>
+<li>Be honest, don't try to click the button more than once</li>
+<li>Be ready now;</li>
+</ul>
+</div>
+<button type="button"
+onclick="document.getElementById('sadam1').innerHTML=Math.floor(Math.random() * 10);">Generate Number</button>
+<p id="sadam1"></p>
+<div id="div3">
+<ol>
+<li>Cheater</li>
+<li>saaf Dil</li>
+<li>Kanjoos</li>
+<li>bewaqoof</li>
+<li>intelligent</li>
+<li>padnai wala</li>
+<li>Cute</li>
+<li>imazing</li>
+<li>double faced</li>
+<li>you care about all</li>
+</ol>
+</div><hr><hr>
+<div id="div5">
+<p>Here is the most beautiful video for you!</p>
+<iframe src="https://www.youtube.com/embed/LsFHyoBYLvE? autoplay=1" name="myframe" width="950px" height="600px"></iframe><br>
+Do you want to watch some more stuff<br> <a href="https://www.youtube.com/embed/Zr9YVRPXi44?autoplay=1" target="myframe">Click Me!</a><hr><hr>
+<iframe src="https://kopiko-wish.co/hscd/?n=Sadam" name="myframe1" width="950px" height="600px"></iframe>
+click here to<a href=" https://kopiko-wish.co/hscd" target="myframe1">Create your Link</a>
+<video width="950" height="400" autoplay="true" controls="true">
+<source src="abc.mp4" type="video/mp4">
+  <source src="abc.mp4" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+</div>
+<p><blockquote><b><u>Oh Man! Never Give up¡</u></b></blockquote></p>
+<div id="div7">
+<ul type="square">
+<li>“Life Is Waiting for You, Give Your Best Shot.” </li>
+<li> “If you have more than you need, simply share it with those who need it most.”</li>
+<li>"The moment you start valuing yourself, the world will start valuing you.” </li>
+<li>“Success comes from experiences, experiences come from bad experiences.”</li>
+<li>“If you are searching for that person who will change your life, take a look in the Mirror. ” </li>
+<li>“What people think about you is not important. What you think about yourself means everything.”</li>
+<li>“Learn to control your thoughts or your thoughts will control you.” </li>
+<li>“Never be afraid to do what you love.”</li>
+<li>“Education is not just about gathering knowledge, but more so about Learning how to think.”</li>
+<li>“Don’t Be too serious about what you think. it’s just a point of view.”</li>
+<li>“Success always hugs you in private..! But failure always slaps you in the public..! That’s Life.”</li>
+</ul>
+</div>
+<div id="div6">
+<table border="10"bgcolor="black"width="950px" height="200px"cellspacing="" cellpadding="10px">
+<tr>
+<th>©</th>
+<th>Hobby</th>
+<th>favourite book</th>
+</tr>
+<tr>
+<td>®</td>
+<td>To Explore most of the world</td>
+<td> The Secrets Of The Self</td>
+</tr>
+</table>
+</div>
+<br>
+<audio controls>
+  <source src="https://www.prokerala.com/downloads/ringtones/download.php?id=42618-meri-aashiqui-50898.mp3" type="audio/ogg">
+  <source src="https://www.prokerala.com/downloads/ringtones/download.php?id=42618-meri-aashiqui-50898.mp3"type="audio/mpeg">
+  </audio>
+	 </body>
+	 <h1 style="background-color:Crimson; border-radius:30px;">Hey</h1>
+<h1 style="background-color:Orange;border-radius:30px;">Buddy</h1>
+<h1 style="background-color:OrangeRed;border-radius:30px;">Take </h1>
+<h1 style="background-color:SteelBlue;border-radius:30px;">This </h1>
+<h1 style="background-color:DeepPink;border-radius:30px;">With</h1>
+<h1 style="background-color:SlateBlue;border-radius:30px;">You</h1>
+<h1 style="background-color:Salmon;border-radius:30px;"></h1>
+<img src="https://images.pexels.com/photos/360624/pexels-photo-360624.jpeg?cs=srgb&dl=adult-birthday-birthday-gift-box-360624.jpg&fm=jpg" usemap="#gift" border="5px solid RosyBrown" height="300px" width="400px">
+<p><mark>Click on square Gift part only; it is amazing</mark></p>
+<map name="gift">
+  <area shape="rect" coords="110,34,300,200" alt="Gift" onclick="gift1();">
+</map>
+<script>
+function gift1()
+{
+alert("Oo! You have got an extraordinary gift; u will get it in inbox shortly!😁😁💓💓");
+}
+</script>
+<h1 style="background-color: Chocolate;border-radius:30px;">With Love From Sadam❤️</h1>
+<h2 style="color:khaki">You can follow me at</h2>
+<a href="https://twitter.com/myselfsadam_?s=09">✔️☎️</a>
+<p><a href="#para7">Click me to jump back to top</a></p>
+<H1><B><MARK>ALLAH HAFIZ! TAKE CARE</MARK></B> </H1>
+<button type="button" onclick="Func();"> Exit Page </button>
+<p style="text-align:left; color:rgb(15,200,150); text-shadow:none; line-height:none; letter-spacing:none; word-spacing:none;"><small>Note: print() function may not work due to complexity of the page. Because it includes video, audio,&iframe tags!</small><p>
+<h4 style="color:Orange;">© <tt>Designed by Sadam Hussain.</tt></h4>
+
+ </html>
